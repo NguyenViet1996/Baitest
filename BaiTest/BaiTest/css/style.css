@@ -1,0 +1,593 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+:root {
+  --color-text1: #f6f6f6;
+  --color-text3: #fafafc;
+  --color-text2: #222222;
+  --color-text4: #ffffff;
+  --color-text5: #676767;
+  --color-text6: #717c89;
+  --bg-button: #fa5805;
+  --bg-section: #f9fafb;
+  --bg-icon: #b7bcc4;
+}
+a:hover {
+  color: var(--color-text1) !important;
+  text-decoration: none !important;
+}
+/* hedader:start */
+.header {
+  background-image: url(../img/header/bg-header.png);
+  background-position: center;
+  background-size: cover;
+}
+.top-header {
+  padding-top: 19px;
+}
+.header-btn a {
+  font-family: Montserrat-Medium;
+  font-size: 12px;
+  color: var(--color-text1) !important;
+}
+
+.header-btn a:first-child {
+  background-color: transparent;
+  border: 1px solid var(--color-text1);
+  padding: 11px 19px 10px 21px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.header-btn a:last-child {
+  background-color: var(--bg-button);
+  padding: 12px 25px 11px 26px;
+  border-radius: 4px;
+}
+.header-main {
+  padding-top: 140px;
+  padding-bottom: 108px;
+}
+.header-title h1 {
+  font-family: Montserrat- Bold;
+  color: var(--color-text1);
+  font-size: 65px;
+  line-height: 85px;
+  margin: 0;
+}
+.header-sub h2 {
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  margin: 0;
+  padding-top: 41px;
+  padding-bottom: 52px;
+  color: var(--color-text4);
+}
+.header-link {
+  padding: 18px 0;
+}
+.header-link a {
+  color: var(--color-text4);
+  font-size: 20px;
+  padding: 18px 69px 18px 69px;
+  background-color: var(--bg-button);
+  border-radius: 8px;
+}
+/* header:end */
+
+/* slider:start */
+.section_slider {
+  padding-top: 80px;
+  padding-bottom: 120px;
+}
+.slider_title {
+  display: flex;
+  justify-content: space-between;
+}
+.slider_left h1 {
+  font-family: Montserrat-Medium;
+  color: var(--color-text2);
+  font-size: 20px;
+  margin: 0;
+}
+.slider_right span {
+  font-family: Montserrat-Semibold;
+  color: var(--color-text2);
+  font-size: 12px;
+  margin: 0;
+}
+.list_slider {
+  padding-top: 20px;
+}
+.item_slider {
+  height: 210px;
+}
+.item_slider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.list_slider {
+  position: relative;
+}
+.list_slider .owl-dots {
+  display: none;
+}
+.list_slider.owl-carousel .owl-nav {
+  display: block !important;
+}
+.list_slider .owl-nav button {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--bg-button) !important;
+  margin: 0;
+  top: 50%;
+}
+.list_slider.owl-carousel .owl-nav button.owl-prev,
+.list_slider.owl-carousel .owl-nav button.owl-next {
+  transform: translateY(-40%);
+}
+.list_slider.owl-carousel .owl-nav button.owl-next {
+  right: 0;
+}
+.list_slider.owl-carousel .owl-nav button.owl-next span,
+.list_slider.owl-carousel .owl-nav button.owl-prev span {
+  font-size: 30px;
+  color: black;
+  font-weight: 700;
+  line-height: 30px;
+}
+/* slider:end */
+
+/* tutorial:start */
+.section_tutorial {
+  background-color: var(--bg-section);
+  padding: 80px 0;
+}
+.tutorial_notif h2 {
+  font-family: Montserrat-Semibold;
+  color: var(--bg-button);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.tutorial_title h1 {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  color: var(--color-text2);
+  margin-bottom: 30px;
+}
+.tutorial_sub h2 {
+  font-family: Montserrat-Light;
+  color: var(--color-text2);
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.item_detail {
+  padding: 40px 30px 390px 28px;
+}
+.wp-top {
+  display: flex;
+  justify-content: space-between;
+}
+.item_detail_1 {
+  background-image: url("../img/tutorial/tutorial1.png");
+  background-position: center;
+  background-size: cover;
+}
+.item_detail_2 {
+  background-image: url("../img/tutorial/tutorial2.png");
+  background-position: center;
+  background-size: cover;
+}
+.item_detail_3 {
+  background-image: url("../img/tutorial/tutorial3.png");
+  background-position: center;
+  background-size: cover;
+}
+.wp-top {
+  margin-bottom: 20px;
+}
+.wp_sub h2 {
+  font-family: Montserrat-Light;
+  font-size: 16px;
+  color: var(--color-text2);
+  margin: 0;
+}
+.wp_title h1 {
+  font-family: Montserrat-Medium;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--color-text2);
+  margin: 0;
+}
+/* tutorial:end */
+
+/* notif:start */
+.section_notif {
+  background-image: url(../img/notif/bg-1.png);
+  background-position: center;
+  background-size: cover;
+  color: var(--color-text1);
+  padding-top: 72px;
+  padding-bottom: 65px;
+}
+.notif_title h1 {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  margin-bottom: 16px;
+}
+.notif_sub h2 {
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  margin-bottom: 21px;
+}
+.notif_btn {
+  padding: 19px 0;
+}
+.notif_btn a {
+  font-family: Montserrat-Light;
+  font-size: 18px;
+  color: var(--color-text2);
+  background-color: var(--color-text1);
+  padding: 19px 70px 19px 70px;
+  border-radius: 8px;
+}
+.notif_btn a:hover {
+  color: var(--color-text2) !important;
+}
+/* notif:end */
+
+/* number:start */
+.section_number {
+  padding: 120px 0;
+  background-color: var(--color-text2);
+}
+.number_title h1 {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  color: var(--color-text4);
+  margin-bottom: 70px;
+}
+.box_number {
+  padding-top: 38px;
+  padding-bottom: 58px;
+  background-color: var(--color-text4);
+}
+.box_icon {
+  margin-bottom: 14px;
+}
+.box_sub p {
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  margin-bottom: 42px;
+}
+.box_detail p {
+  font-family: Montserrat-Medium;
+  font-size: 80px;
+  line-height: 80px;
+  margin: 0;
+  color: var(--color-text2);
+}
+.desc_title h2 {
+  font-family: Montserrat-Light;
+  color: var(--color-text4);
+  font-size: 20px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+.desc_link {
+  padding-top: 18px;
+}
+.desc_link a {
+  font-family: Montserrat-Light;
+  font-size: 17px;
+  color: var(--color-text4);
+  background-color: var(--bg-button);
+  padding: 18px 70px;
+  border-radius: 8px;
+}
+/* number:end */
+
+/* notif_2:start */
+.section_notif_2 {
+  background-image: url("../img/notif/bg-2.png");
+  padding-top: 102px;
+  padding-bottom: 80px;
+}
+.section_notif_2 .notif_sub h2 {
+  line-height: 30px;
+}
+/* notif_2:end */
+
+/* news:start */
+.section_news {
+  padding: 120px 0;
+}
+.news_title h1 {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  color: var(--color-text2);
+  margin-bottom: 30px;
+}
+.news_sub h2 {
+  font-family: Montserrat-Light;
+  font-size: 20px;
+  line-height: 35px;
+  color: var(--color-text2);
+  margin-bottom: 40px;
+}
+.box-new {
+  background-color: var(--bg-section);
+  padding-top: 58px;
+  padding-bottom: 49px;
+}
+.box_title h2 {
+  font-family: Montserrat-Medium;
+  color: var(--bg-button);
+  font-size: 24px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
+.box_content p {
+  font-family: Montserrat-Light;
+  font-size: 18px;
+  line-height: 25px;
+  color: var(--color-text5);
+  margin: 0;
+}
+/* news:end */
+
+/* info:start */
+.main_info {
+  padding: 160px 0;
+}
+.info_1 {
+  background-color: var(--bg-button);
+}
+.thumbnail img {
+  width: 450px;
+  height: 432px;
+  object-fit: cover;
+}
+.info_notf {
+  margin-bottom: 20px;
+}
+.info_notf span {
+  font-family: Montserrat-Semibold;
+  color: var(--color-text2);
+  font-size: 16px;
+}
+.info_title {
+  margin-bottom: 30px;
+}
+.info_title h2 {
+  font-family: Montserrat-Medium;
+  font-size: 35px;
+  color: var(--color-text3);
+  margin-bottom: 30px;
+}
+.info_content {
+  margin-bottom: 51px;
+}
+.info_content p {
+  font-family: Montserrat-Light;
+  color: var(--color-text3);
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+}
+.info_btn {
+  padding-top: 11px;
+}
+.info_btn a {
+  font-family: Montserrat-Light;
+  color: var(--color-text4);
+  font-size: 18px;
+  padding: 11px 68px 11px 68px;
+  background-color: var(--color-text2);
+  border-radius: 8px;
+}
+
+.info_detail_2 .info_notf span {
+  color: var(--bg-button);
+}
+.info_detail_2 .info_title h2,
+.info_detail_2 .info_content p {
+  color: var(--color-text2);
+}
+.info_detail_2 .info_btn a {
+  color: var(--color-text4);
+  background-color: var(--bg-button);
+}
+.info_detail_2 {
+  padding-left: 120px;
+}
+/* info:end */
+
+/* footer:start */
+.footer {
+  background-color: var(--bg-section);
+  padding-top: 62px;
+  padding-bottom: 122px;
+}
+.ft-title {
+  margin-bottom: 21px;
+}
+.ft-title span {
+  font-family: Montserrat-Medium;
+  font-size: 14px;
+  color: var(--color-text2);
+}
+.ft-title span:nth-child(2) {
+  margin: 0 33px;
+}
+.ft-medical ul li {
+  display: inline-block;
+}
+.ft-medical ul li:first-child {
+  margin-right: 5px;
+}
+.ft-medical ul li:nth-child(n + 2) {
+  margin: 0 5px;
+}
+.ft-medical ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  background-color: var(--bg-icon);
+}
+.ft-medical ul li a img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+}
+.ft-content span {
+  font-family: Montserrat-Light;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--color-text6);
+}
+.ft-space {
+  padding-right: 11px;
+  margin-right: 11px;
+  position: relative;
+}
+.ft-space:after {
+  position: absolute;
+  content: " ";
+  background-color: var(--color-text6);
+  width: 1px;
+  height: 16px;
+  right: 0;
+  transform: translateY(30%);
+}
+.ft-notif span {
+  font-family: Montserrat-Regular;
+  font-size: 12px;
+  color: var(--color-text6);
+}
+/* footer:end */
+
+@media (max-width: 1024px) {
+  .middle {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-title h1 {
+    font-size: 50px;
+    line-height: 70px;
+  }
+  .item_detail {
+    padding: 40px 15px 300px 15px;
+  }
+  .wp_title h1 {
+    font-size: 15px;
+  }
+  .wp_sub h2 {
+    font-size: 10px;
+  }
+  .wp_icon {
+    display: inherit;
+  }
+  .thumbnail {
+    display: flex;
+    align-items: center;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .info_detail_2 {
+    padding-left: 0;
+  }
+  .box-new {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 415px) {
+  .header-btn a {
+    font-size: 8px;
+  }
+  .header-title h1 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .header-sub h2 {
+    font-size: 13px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .header-link a {
+    font-size: 13px;
+  }
+  .item_tutorial {
+    margin-bottom: 20px;
+  }
+  .notif_title h1 {
+    font-size: 23px;
+  }
+  .notif_sub h2,
+  .notif_btn a {
+    font-size: 13px;
+  }
+  .notif_btn a {
+    padding: 17px 50px 19px 50px;
+  }
+  .box_number {
+    margin-bottom: 20px;
+  }
+  .main_info {
+    padding: 80px 0;
+  }
+  .info_detail_2 {
+    padding: 0 10px;
+    margin-bottom: 30px;
+  }
+  .info_detail_1 {
+    padding: 0 10px;
+  }
+  .wp_title h1 {
+    font-size: 25px;
+  }
+  .ft-medical.text-right {
+    text-align: center !important;
+    padding-top: 40px;
+  }
+  .footer {
+    padding: 50px 0;
+  }
+  .section_news {
+    padding: 80px 0;
+  }
+  .news_title h1 {
+    font-size: 34px;
+  }
+  .section_slider {
+    padding-bottom: 80px;
+  }
+}
+@media (max-width: 378px) {
+  .header-btn a:first-child {
+    padding: 8px 12px 8px 12px;
+  }
+  .header-btn a:last-child {
+    padding: 8px 16px 8px 16px;
+  }
+  .header-sub h2 {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+}
